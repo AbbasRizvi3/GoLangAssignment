@@ -1,0 +1,109 @@
+{"level":"info","time":"2026-01-01T18:16:07+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-01T18:18:29+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-01T18:20:35+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-01T18:20:35+05:00","message":"Starting Worker 0"}
+{"level":"info","time":"2026-01-01T18:20:35+05:00","message":"Starting Worker 1"}
+{"level":"info","time":"2026-01-01T18:20:35+05:00","message":"Starting Worker 2"}
+{"level":"info","time":"2026-01-01T18:20:35+05:00","message":"Starting Worker 3"}
+{"level":"info","time":"2026-01-01T18:20:35+05:00","message":"Starting Worker 4"}
+{"level":"info","time":"2026-01-01T18:20:35+05:00","message":"Processing Task ID: 321, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:35+05:00","message":"Processing Task ID: 580, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:35+05:00","message":"Processing Task ID: 147, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:35+05:00","message":"Processing Task ID: 351, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:35+05:00","message":"Processing Task ID: 870, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:38+05:00","message":"Task ID: 870 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:38+05:00","message":"Processing Task ID: 351, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:38+05:00","message":"Task ID: 580 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:38+05:00","message":"Processing Task ID: 572, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:38+05:00","message":"Task ID: 351 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:38+05:00","message":"Processing Task ID: 967, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:38+05:00","message":"Task ID: 147 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:38+05:00","message":"Processing Task ID: 268, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:38+05:00","message":"Task ID: 321 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:38+05:00","message":"Processing Task ID: 101, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:41+05:00","message":"Task ID: 101 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:41+05:00","message":"Processing Task ID: 234, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:41+05:00","message":"Task ID: 967 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:41+05:00","message":"Processing Task ID: 855, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:41+05:00","message":"Task ID: 572 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:41+05:00","message":"Processing Task ID: 835, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:41+05:00","message":"Task ID: 351 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:41+05:00","message":"Processing Task ID: 672, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:41+05:00","message":"Task ID: 268 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:41+05:00","message":"Processing Task ID: 659, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:44+05:00","message":"Task ID: 659 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:44+05:00","message":"Task ID: 835 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:44+05:00","message":"Processing Task ID: 309, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:44+05:00","message":"Task ID: 855 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:44+05:00","message":"Processing Task ID: 918, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:44+05:00","message":"Processing Task ID: 898, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:44+05:00","message":"Task ID: 234 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:44+05:00","message":"Processing Task ID: 44, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:44+05:00","message":"Task ID: 672 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:44+05:00","message":"Processing Task ID: 239, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:47+05:00","message":"Task ID: 918 completed successfully"}
+{"level":"error","time":"2026-01-01T18:20:47+05:00","message":"Task ID: 239 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:47+05:00","message":"Processing Task ID: 540, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:47+05:00","message":"Task ID: 309 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:47+05:00","message":"Processing Task ID: 479, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:47+05:00","message":"Task ID: 898 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:47+05:00","message":"Processing Task ID: 416, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:47+05:00","message":"Processing Task ID: 744, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:47+05:00","message":"Task ID: 44 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:47+05:00","message":"Processing Task ID: 292, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:50+05:00","message":"Task ID: 744 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:50+05:00","message":"Processing Task ID: 383, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:50+05:00","message":"Task ID: 540 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:50+05:00","message":"Processing Task ID: 307, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:50+05:00","message":"Task ID: 479 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:50+05:00","message":"Processing Task ID: 335, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:50+05:00","message":"Task ID: 416 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:50+05:00","message":"Task ID: 292 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:50+05:00","message":"Processing Task ID: 834, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:50+05:00","message":"Processing Task ID: 599, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:53+05:00","message":"Task ID: 599 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:53+05:00","message":"Processing Task ID: 229, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:53+05:00","message":"Task ID: 307 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:53+05:00","message":"Processing Task ID: 929, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:53+05:00","message":"Task ID: 834 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:53+05:00","message":"Processing Task ID: 968, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:53+05:00","message":"Task ID: 335 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:53+05:00","message":"Processing Task ID: 20, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:53+05:00","message":"Task ID: 383 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:53+05:00","message":"Processing Task ID: 549, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:56+05:00","message":"Task ID: 549 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:56+05:00","message":"Processing Task ID: 131, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:56+05:00","message":"Task ID: 929 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:56+05:00","message":"Processing Task ID: 300, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:56+05:00","message":"Task ID: 968 failed during processing"}
+{"level":"error","time":"2026-01-01T18:20:56+05:00","message":"Task ID: 229 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:56+05:00","message":"Processing Task ID: 583, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:56+05:00","message":"Task ID: 20 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:56+05:00","message":"Processing Task ID: 95, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:56+05:00","message":"Processing Task ID: 644, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:59+05:00","message":"Task ID: 644 completed successfully"}
+{"level":"error","time":"2026-01-01T18:20:59+05:00","message":"Task ID: 95 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:59+05:00","message":"Processing Task ID: 267, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:59+05:00","message":"Task ID: 131 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:59+05:00","message":"Processing Task ID: 573, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:20:59+05:00","message":"Task ID: 300 failed during processing"}
+{"level":"info","time":"2026-01-01T18:20:59+05:00","message":"Processing Task ID: 847, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:59+05:00","message":"Task ID: 583 completed successfully"}
+{"level":"info","time":"2026-01-01T18:20:59+05:00","message":"Processing Task ID: 715, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:20:59+05:00","message":"Processing Task ID: 281, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:21:02+05:00","message":"Task ID: 281 completed successfully"}
+{"level":"info","time":"2026-01-01T18:21:02+05:00","message":"Processing Task ID: 89, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:21:02+05:00","message":"Task ID: 267 failed during processing"}
+{"level":"error","time":"2026-01-01T18:21:02+05:00","message":"Task ID: 573 failed during processing"}
+{"level":"info","time":"2026-01-01T18:21:02+05:00","message":"Processing Task ID: 735, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:21:02+05:00","message":"Task ID: 847 failed during processing"}
+{"level":"info","time":"2026-01-01T18:21:02+05:00","message":"Processing Task ID: 580, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:21:02+05:00","message":"Task ID: 715 failed during processing"}
+{"level":"info","time":"2026-01-01T18:21:02+05:00","message":"Processing Task ID: 474, Name: sample job"}
+{"level":"info","time":"2026-01-01T18:21:02+05:00","message":"Processing Task ID: 421, Name: sample job"}
+{"level":"error","time":"2026-01-01T18:21:05+05:00","message":"Task ID: 421 failed during processing"}
+{"level":"info","time":"2026-01-01T18:21:05+05:00","message":"Task ID: 89 completed successfully"}
+{"level":"error","time":"2026-01-01T18:21:05+05:00","message":"Task ID: 474 failed during processing"}
+{"level":"error","time":"2026-01-01T18:21:05+05:00","message":"Task ID: 735 failed during processing"}
+{"level":"info","time":"2026-01-01T18:21:05+05:00","message":"Task ID: 580 completed successfully"}
+{"level":"info","time":"2026-01-01T18:21:05+05:00","message":"Logger Exiting (Program execution suspended)"}
