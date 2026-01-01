@@ -27,6 +27,7 @@ func (t *Task) Process(ctx context.Context) error {
 	case <-ctx.Done():
 		{
 			t.Status = "Failed"
+			t.Result = "Task cancelled / Timeout"
 			Logger.Error().Msgf("Task ID: %s cancelled", t.ID)
 			return ctx.Err()
 		}
@@ -35,10 +36,12 @@ func (t *Task) Process(ctx context.Context) error {
 			time.Sleep(3 * time.Second)
 			if rand == 1 {
 				t.Status = "Completed"
+				t.Result = "Task completed successfully"
 				Logger.Info().Msgf("Task ID: %s completed successfully", t.ID)
 				return nil
 			} else {
 				t.Status = "Failed"
+				t.Result = "Task failed during processing"
 				Logger.Error().Msgf("Task ID: %s failed during processing", t.ID)
 				return errors.New("Task Failed")
 			}

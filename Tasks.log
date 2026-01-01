@@ -177,3 +177,12 @@
 {"level":"info","time":"2026-01-01T21:19:49+05:00","message":"Fetching all tasks"}
 {"level":"info","time":"2026-01-01T21:19:52+05:00","message":"Fetching all tasks"}
 {"level":"info","time":"2026-01-01T21:19:53+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-01T21:27:33+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-01T21:27:44+05:00","message":"Fetching task with ID: 244177"}
+{"level":"info","time":"2026-01-01T21:28:04+05:00","message":"Added Task ID: 493682, Name: Another Long task"}
+{"level":"info","time":"2026-01-01T21:28:04+05:00","message":"Processing Task ID: 493682, Name: Another Long task"}
+{"level":"info","time":"2026-01-01T21:28:06+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-01T21:28:07+05:00","message":"Task ID: 493682 completed successfully"}
+{"level":"info","time":"2026-01-01T21:28:07+05:00","message":"Result received for Task ID: 493682, Status: Completed"}
+{"level":"info","time":"2026-01-01T21:28:10+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-01T21:28:11+05:00","message":"Fetching all tasks"}
