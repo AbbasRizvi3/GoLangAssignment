@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"errors"
 	"math/rand"
 	"time"
@@ -18,7 +19,7 @@ type Task struct {
 	Result   string
 }
 
-func (t *Task) Process() error {
+func (t *Task) Process(ctx context.Context) error {
 	rand := rand.Intn(2)
 	Logger.Info().Msgf("Processing Task ID: %s, Name: %s", t.ID, t.Name)
 	t.Status = "InProgress"
@@ -32,4 +33,13 @@ func (t *Task) Process() error {
 		Logger.Error().Msgf("Task ID: %s failed during processing", t.ID)
 		return errors.New("Task Failed")
 	}
+
+	// select {
+	// case <-ctx.Done():
+	// 	{
+	// 		t.Status = "Failed"
+	// 		Logger.Error().Msgf("Task ID: %s cancelled", t.ID)
+	// 		return ctx.Err()
+	// 	}
+	// }
 }
