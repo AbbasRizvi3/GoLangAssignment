@@ -21,15 +21,6 @@ func main() {
 		go worker(taskChannel, resultChannel)
 	}
 
-	// for j := 0; j < numJobs; j++ {
-	// 	taskChannel <- Task{
-	// 		ID:       fmt.Sprintf("%d", rand.Intn(1000)),
-	// 		Name:     "sample job",
-	// 		Priority: 1,
-	// 	}
-	// // }
-	// close(taskChannel)
-
 	go func() {
 		for res := range resultChannel {
 			Logger.Info().Msgf("Result received for Task ID: %s, Status: %s", res.ID, res.Status)

@@ -23,23 +23,26 @@ func (t *Task) Process(ctx context.Context) error {
 	rand := rand.Intn(2)
 	Logger.Info().Msgf("Processing Task ID: %s, Name: %s", t.ID, t.Name)
 	t.Status = "InProgress"
-	time.Sleep(3 * time.Second)
-	if rand == 1 {
-		t.Status = "Completed"
-		Logger.Info().Msgf("Task ID: %s completed successfully", t.ID)
-		return nil
-	} else {
-		t.Status = "Failed"
-		Logger.Error().Msgf("Task ID: %s failed during processing", t.ID)
-		return errors.New("Task Failed")
+	select {
+	case <-ctx.Done():
+		{
+			t.Status = "Failed"
+			Logger.Error().Msgf("Task ID: %s cancelled", t.ID)
+			return ctx.Err()
+		}
+	default:
+		{
+			time.Sleep(3 * time.Second)
+			if rand == 1 {
+				t.Status = "Completed"
+				Logger.Info().Msgf("Task ID: %s completed successfully", t.ID)
+				return nil
+			} else {
+				t.Status = "Failed"
+				Logger.Error().Msgf("Task ID: %s failed during processing", t.ID)
+				return errors.New("Task Failed")
+			}
+		}
 	}
 
-	// select {
-	// case <-ctx.Done():
-	// 	{
-	// 		t.Status = "Failed"
-	// 		Logger.Error().Msgf("Task ID: %s cancelled", t.ID)
-	// 		return ctx.Err()
-	// 	}
-	// }
 }
