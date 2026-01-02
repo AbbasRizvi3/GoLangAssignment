@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"math/rand"
 	"time"
 )
@@ -42,7 +43,7 @@ func (t *Task) Process(ctx context.Context) error {
 				t.Status = "Failed"
 				t.Result = "Task failed during processing"
 				Logger.Error().Msgf("Task ID: %s failed during processing", t.ID)
-				return nil
+				return fmt.Errorf("task %s failed during processing", t.Name)
 			}
 		}
 	}

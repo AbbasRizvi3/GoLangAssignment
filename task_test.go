@@ -40,34 +40,34 @@ func TestTaskProcessingWithTimeout(t *testing.T) {
 	}
 }
 
-// func TestTaskProcessRandomness(t *testing.T) {
-// 	completed, failed := 0, 0
+func TestTaskProcessRandomness(t *testing.T) {
+	completed, failed := 0, 0
 
-// 	for i := 0; i < 20; i++ {
-// 		task := &Task{
-// 			Name:     "Random Task",
-// 			Priority: 1,
-// 			Status:   "Pending",
-// 		}
+	for i := 0; i < 20; i++ {
+		task := &Task{
+			Name:     "Random Task",
+			Priority: 1,
+			Status:   "Pending",
+		}
 
-// 		err := task.Process(context.Background())
+		err := task.Process(context.Background())
 
-// 		if task.Status == "Completed" {
-// 			completed++
-// 		} else if task.Status == "Failed" {
-// 			failed++
-// 		} else {
-// 			t.Errorf("Unexpected status: %s", task.Status)
-// 		}
+		if task.Status == "Completed" {
+			completed++
+		} else if task.Status == "Failed" {
+			failed++
+		} else {
+			t.Errorf("Unexpected status: %s", task.Status)
+		}
 
-// 		if task.Status == "Completed" && err != nil {
-// 			t.Errorf("Expected nil error for Completed task")
-// 		}
-// 		if task.Status == "Failed" && err == nil {
-// 			t.Errorf("Expected error for Failed task")
-// 		}
-// 	}
-// 	if completed == 0 || failed == 0 {
-// 		t.Errorf("Randomness not observed: Completed=%d, Failed=%d", completed, failed)
-// 	}
-// }
+		if task.Status == "Completed" && err != nil {
+			t.Errorf("Expected nil error for Completed task")
+		}
+		if task.Status == "Failed" && err == nil {
+			t.Errorf("Expected error for Failed task")
+		}
+	}
+	if completed == 0 || failed == 0 {
+		t.Errorf("Randomness not observed: Completed=%d, Failed=%d", completed, failed)
+	}
+}
