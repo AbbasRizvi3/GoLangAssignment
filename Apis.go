@@ -19,7 +19,7 @@ func handleAddTask(ctx *gin.Context) {
 		Priority: req.Priority,
 		Status:   "Pending",
 	}
-	Tasks.AddTask(*temp)
+	Tasks.AddTask(temp)
 	Logger.Info().Msgf("Added Task ID: %s, Name: %s", temp.ID, temp.Name)
 	ctx.JSON(200, gin.H{"message": "Task added successfully", "task": temp})
 	select {
@@ -44,7 +44,7 @@ func handleGetSpecificTask(ctx *gin.Context) {
 	temp := make([]Task, 0)
 	for _, item := range Tasks.Tasks {
 		if item.ID == id {
-			temp = append(temp, item)
+			temp = append(temp, *item)
 		}
 	}
 

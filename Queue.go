@@ -6,11 +6,11 @@ import (
 )
 
 type TaskQueue struct {
-	Tasks []Task
+	Tasks []*Task
 	mutex sync.RWMutex
 }
 
-func (q *TaskQueue) AddTask(task Task) {
+func (q *TaskQueue) AddTask(task *Task) {
 	q.mutex.Lock()
 	defer q.mutex.Unlock()
 	q.Tasks = append(q.Tasks, task)
@@ -25,7 +25,7 @@ func (q *TaskQueue) GetNextTask() *Task {
 
 	for i := 0; i < len(q.Tasks); i++ {
 		if q.Tasks[i].Status == "Pending" {
-			return &q.Tasks[i]
+			return q.Tasks[i]
 		}
 	}
 	return nil

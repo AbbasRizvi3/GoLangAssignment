@@ -19,8 +19,8 @@ func TestAddTasksToQueue(t *testing.T) {
 		Priority: 2,
 		Status:   "Pending",
 	}
-	Tasks.AddTask(task1)
-	Tasks.AddTask(task2)
+	Tasks.AddTask(&task1)
+	Tasks.AddTask(&task2)
 	if len(Tasks.Tasks) != 2 {
 		t.Errorf("Expected 2 tasks in the queue, got %d", len(Tasks.Tasks))
 	}
@@ -40,8 +40,8 @@ func TestPriorityOrder(t *testing.T) {
 		Priority: 5,
 		Status:   "Pending",
 	}
-	Tasks.AddTask(task1)
-	Tasks.AddTask(task2)
+	Tasks.AddTask(&task1)
+	Tasks.AddTask(&task2)
 
 	nextTask := Tasks.GetNextTask()
 	if nextTask.Name != "HighPriorityTask" {
