@@ -4,9 +4,9 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-var Tasks []*Task
+var Tasks TaskQueue
 
-var taskChannel = make(chan *Task, 100)
+var taskChannel = make(chan struct{}, 1)
 var resultChannel = make(chan *Task, 100)
 var Router = gin.Default()
 

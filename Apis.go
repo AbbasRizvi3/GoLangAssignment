@@ -19,25 +19,34 @@ func handleAddTask(ctx *gin.Context) {
 		Priority: req.Priority,
 		Status:   "Pending",
 	}
-	Tasks = append(Tasks, temp)
+	Tasks.AddTask(*temp)
 	Logger.Info().Msgf("Added Task ID: %s, Name: %s", temp.ID, temp.Name)
 	ctx.JSON(200, gin.H{"message": "Task added successfully", "task": temp})
-	taskChannel <- temp
+	select {
+	case taskChannel <- struct{}{}:
+	default:
+	}
 }
 
 func handleGetAllTasks(ctx *gin.Context) {
 	Logger.Info().Msg("Fetching all tasks")
-	ctx.JSON(200, gin.H{"tasks": Tasks})
+	Tasks.mutex.RLock()
+	defer Tasks.mutex.RUnlock()
+	ctx.JSON(200, gin.H{"tasks": Tasks.Tasks})
 }
 
 func handleGetSpecificTask(ctx *gin.Context) {
+
+	Tasks.mutex.RLock()
+	defer Tasks.mutex.RUnlock()
 	id := ctx.Param("id")
+	Logger.Info().Msgf("Fetching task with ID: %s", id)
 	temp := make([]Task, 0)
-	for _, item := range Tasks {
+	for _, item := range Tasks.Tasks {
 		if item.ID == id {
-			temp = append(temp, *item)
+			temp = append(temp, item)
 		}
 	}
-	Logger.Info().Msgf("Fetching task with ID: %s", id)
+
 	ctx.JSON(200, gin.H{"tasks": temp})
 }

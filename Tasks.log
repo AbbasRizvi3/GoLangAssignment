@@ -186,3 +186,601 @@
 {"level":"info","time":"2026-01-01T21:28:07+05:00","message":"Result received for Task ID: 493682, Status: Completed"}
 {"level":"info","time":"2026-01-01T21:28:10+05:00","message":"Fetching all tasks"}
 {"level":"info","time":"2026-01-01T21:28:11+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-01T21:31:26+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-01T21:31:54+05:00","message":"Fetching task with ID: 493682"}
+{"level":"info","time":"2026-01-02T18:45:24+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T18:45:24+05:00","message":"Starting Worker 0"}
+{"level":"info","time":"2026-01-02T18:45:24+05:00","message":"Starting Worker 1"}
+{"level":"info","time":"2026-01-02T18:45:24+05:00","message":"Starting Worker 2"}
+{"level":"info","time":"2026-01-02T18:45:24+05:00","message":"Starting Worker 3"}
+{"level":"info","time":"2026-01-02T18:45:24+05:00","message":"Starting Worker 4"}
+{"level":"info","time":"2026-01-02T18:45:33+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T19:29:13+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T19:29:13+05:00","message":"Added Task ID: 510039, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T19:34:17+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T19:34:17+05:00","message":"Added Task ID: 679968, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T19:34:42+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T19:34:42+05:00","message":"Added Task ID: 371305, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T19:34:42+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T19:38:01+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T19:38:01+05:00","message":"Added Task ID: 511004, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T19:38:01+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T19:40:15+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T19:40:15+05:00","message":"Added Task ID: 977410, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T19:40:15+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T19:40:18+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T19:40:18+05:00","message":"Added Task ID: 106462, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T19:40:18+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T19:44:24+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T19:44:24+05:00","message":"Added Task ID: 814807, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T19:44:24+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T19:53:58+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T19:53:58+05:00","message":"Added Task ID: 855640, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T19:53:58+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T19:53:58+05:00","message":"Processing Task ID: test123, Name: Test Task"}
+{"level":"info","time":"2026-01-02T19:54:01+05:00","message":"Task ID: test123 completed successfully"}
+{"level":"info","time":"2026-01-02T19:56:43+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T19:56:43+05:00","message":"Added Task ID: 236284, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T19:56:43+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T19:56:43+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"info","time":"2026-01-02T19:56:46+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T19:57:26+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T19:57:26+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"info","time":"2026-01-02T19:57:29+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T19:57:47+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T19:57:47+05:00","message":"Added Task ID: 989717, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T19:57:47+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T19:57:47+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"info","time":"2026-01-02T19:57:50+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T19:58:53+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T19:58:53+05:00","message":"Added Task ID: 790057, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T19:58:53+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T19:58:53+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"error","time":"2026-01-02T19:58:56+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:00:45+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T20:00:45+05:00","message":"Added Task ID: 212270, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T20:00:45+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:00:45+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"info","time":"2026-01-02T20:00:48+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T20:01:35+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T20:01:35+05:00","message":"Added Task ID: 167290, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T20:01:35+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:01:35+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"info","time":"2026-01-02T20:01:38+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T20:01:38+05:00","message":"Processing Task ID: , Name: Test Task with Timeout"}
+{"level":"error","time":"2026-01-02T20:01:38+05:00","message":"Task ID:  cancelled"}
+{"level":"info","time":"2026-01-02T20:02:36+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T20:02:36+05:00","message":"Added Task ID: 367810, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T20:02:36+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:02:36+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"error","time":"2026-01-02T20:02:39+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:02:39+05:00","message":"Processing Task ID: , Name: Test Task with Timeout"}
+{"level":"error","time":"2026-01-02T20:02:39+05:00","message":"Task ID:  cancelled"}
+{"level":"info","time":"2026-01-02T20:02:39+05:00","message":"Processing Task ID: , Name: Test Task with Cancellation"}
+{"level":"error","time":"2026-01-02T20:02:42+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:02:47+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T20:02:47+05:00","message":"Added Task ID: 531440, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T20:02:47+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:02:47+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"error","time":"2026-01-02T20:02:50+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:02:50+05:00","message":"Processing Task ID: , Name: Test Task with Timeout"}
+{"level":"error","time":"2026-01-02T20:02:50+05:00","message":"Task ID:  cancelled"}
+{"level":"info","time":"2026-01-02T20:02:50+05:00","message":"Processing Task ID: , Name: Test Task with Cancellation"}
+{"level":"info","time":"2026-01-02T20:02:53+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T20:02:57+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T20:02:57+05:00","message":"Added Task ID: 120120, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T20:02:57+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:02:57+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"info","time":"2026-01-02T20:03:00+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T20:03:00+05:00","message":"Processing Task ID: , Name: Test Task with Timeout"}
+{"level":"error","time":"2026-01-02T20:03:00+05:00","message":"Task ID:  cancelled"}
+{"level":"info","time":"2026-01-02T20:03:00+05:00","message":"Processing Task ID: , Name: Test Task with Cancellation"}
+{"level":"info","time":"2026-01-02T20:03:03+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T20:04:41+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T20:04:41+05:00","message":"Added Task ID: 475890, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T20:04:41+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:04:41+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"info","time":"2026-01-02T20:04:44+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T20:04:44+05:00","message":"Processing Task ID: , Name: Test Task with Timeout"}
+{"level":"error","time":"2026-01-02T20:04:44+05:00","message":"Task ID:  cancelled"}
+{"level":"info","time":"2026-01-02T20:04:44+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-02T20:04:47+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:04:47+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-02T20:04:50+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:04:50+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-02T20:04:53+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:04:53+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"info","time":"2026-01-02T20:04:56+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T20:04:56+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-02T20:04:59+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:04:59+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-02T20:05:02+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:05:02+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-02T20:05:05+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:05:05+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-02T20:05:08+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:05:08+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-02T20:05:11+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:05:11+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"info","time":"2026-01-02T20:05:14+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T20:05:14+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-02T20:05:17+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:05:17+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"info","time":"2026-01-02T20:05:20+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T20:05:20+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-02T20:05:23+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:05:23+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"info","time":"2026-01-02T20:05:26+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T20:05:26+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-02T20:05:29+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:05:29+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-02T20:05:32+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:05:32+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-02T20:05:35+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:05:35+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-02T20:05:38+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:05:38+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-02T20:05:41+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:05:41+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-02T20:05:44+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:11:51+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T20:11:51+05:00","message":"Added Task ID: 729800, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T20:11:51+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:11:51+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"error","time":"2026-01-02T20:11:54+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:12:03+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T20:12:03+05:00","message":"Added Task ID: 484805, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T20:12:03+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:12:03+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"error","time":"2026-01-02T20:12:06+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:12:47+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T20:12:47+05:00","message":"Added Task ID: 960226, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T20:12:47+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:12:47+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"error","time":"2026-01-02T20:12:50+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:13:07+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T20:13:07+05:00","message":"Added Task ID: 903415, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T20:13:07+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:13:07+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"info","time":"2026-01-02T20:13:10+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T20:14:05+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T20:14:05+05:00","message":"Added Task ID: 270132, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T20:14:05+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:14:05+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"info","time":"2026-01-02T20:14:08+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T20:14:29+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T20:14:29+05:00","message":"Added Task ID: 676879, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T20:14:29+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:14:29+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"info","time":"2026-01-02T20:14:32+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T20:17:14+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T20:17:14+05:00","message":"Added Task ID: 353810, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T20:17:14+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:17:14+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"error","time":"2026-01-02T20:17:17+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-02T20:17:17+05:00","message":"Processing Task ID: , Name: Test Task with Timeout"}
+{"level":"error","time":"2026-01-02T20:17:17+05:00","message":"Task ID:  cancelled"}
+{"level":"info","time":"2026-01-02T20:19:07+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T20:19:07+05:00","message":"Added Task ID: 288184, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T20:19:07+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:19:07+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"info","time":"2026-01-02T20:19:10+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T20:19:10+05:00","message":"Processing Task ID: , Name: Test Task with Timeout"}
+{"level":"error","time":"2026-01-02T20:19:10+05:00","message":"Task ID:  cancelled"}
+{"level":"info","time":"2026-01-02T20:21:48+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T20:21:48+05:00","message":"Added Task ID: 785721, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T20:21:48+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:21:48+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"info","time":"2026-01-02T20:21:51+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T20:21:51+05:00","message":"Processing Task ID: , Name: Test Task with Timeout"}
+{"level":"error","time":"2026-01-02T20:21:51+05:00","message":"Task ID:  cancelled"}
+{"level":"info","time":"2026-01-02T20:34:12+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T20:34:12+05:00","message":"Starting Worker 0"}
+{"level":"info","time":"2026-01-02T20:34:12+05:00","message":"Starting Worker 1"}
+{"level":"info","time":"2026-01-02T20:34:12+05:00","message":"Starting Worker 2"}
+{"level":"info","time":"2026-01-02T20:34:12+05:00","message":"Starting Worker 3"}
+{"level":"info","time":"2026-01-02T20:34:12+05:00","message":"Starting Worker 4"}
+{"level":"info","time":"2026-01-02T20:34:21+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:34:33+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:34:36+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:34:36+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:34:37+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:34:38+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:41:20+05:00","message":"Added Task ID: 253911, Name: Long task"}
+{"level":"info","time":"2026-01-02T20:41:20+05:00","message":"Processing Task ID: 253911, Name: Long task"}
+{"level":"error","time":"2026-01-02T20:41:23+05:00","message":"Task ID: 253911 failed during processing"}
+{"level":"info","time":"2026-01-02T20:41:23+05:00","message":"Result received for Task ID: 253911, Status: Failed"}
+{"level":"info","time":"2026-01-02T20:41:25+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:41:32+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:41:34+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:41:35+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:41:40+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:41:41+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:41:42+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:41:43+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:41:44+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:41:51+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:41:54+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:41:58+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:42:06+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:43:48+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T20:43:49+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:11:05+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T21:11:05+05:00","message":"Starting Worker 0"}
+{"level":"info","time":"2026-01-02T21:11:05+05:00","message":"Starting Worker 1"}
+{"level":"info","time":"2026-01-02T21:11:05+05:00","message":"Starting Worker 2"}
+{"level":"info","time":"2026-01-02T21:11:05+05:00","message":"Starting Worker 3"}
+{"level":"info","time":"2026-01-02T21:11:05+05:00","message":"Starting Worker 4"}
+{"level":"info","time":"2026-01-02T21:11:09+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:11:22+05:00","message":"Added Task ID: 598248, Name: Long task"}
+{"level":"info","time":"2026-01-02T21:11:27+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:11:28+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:11:29+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:11:33+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:14:31+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T21:14:31+05:00","message":"Starting Worker 0"}
+{"level":"info","time":"2026-01-02T21:14:31+05:00","message":"Starting Worker 1"}
+{"level":"info","time":"2026-01-02T21:14:31+05:00","message":"Starting Worker 2"}
+{"level":"info","time":"2026-01-02T21:14:31+05:00","message":"Starting Worker 3"}
+{"level":"info","time":"2026-01-02T21:14:31+05:00","message":"Starting Worker 4"}
+{"level":"info","time":"2026-01-02T21:14:35+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:14:38+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:14:41+05:00","message":"Added Task ID: 684167, Name: Long task"}
+{"level":"info","time":"2026-01-02T21:14:43+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:14:47+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:14:48+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:14:50+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:14:52+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:14:54+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:14:57+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:14:59+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:16:28+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T21:16:28+05:00","message":"Starting Worker 0"}
+{"level":"info","time":"2026-01-02T21:16:28+05:00","message":"Starting Worker 1"}
+{"level":"info","time":"2026-01-02T21:16:28+05:00","message":"Starting Worker 2"}
+{"level":"info","time":"2026-01-02T21:16:28+05:00","message":"Starting Worker 3"}
+{"level":"info","time":"2026-01-02T21:16:28+05:00","message":"Starting Worker 4"}
+{"level":"info","time":"2026-01-02T21:16:30+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:16:34+05:00","message":"Added Task ID: 710516, Name: Long task"}
+{"level":"info","time":"2026-01-02T21:16:37+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:16:43+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:19:47+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T21:19:47+05:00","message":"Starting Worker 0"}
+{"level":"info","time":"2026-01-02T21:19:47+05:00","message":"Starting Worker 1"}
+{"level":"info","time":"2026-01-02T21:19:47+05:00","message":"Starting Worker 2"}
+{"level":"info","time":"2026-01-02T21:19:47+05:00","message":"Starting Worker 3"}
+{"level":"info","time":"2026-01-02T21:19:47+05:00","message":"Starting Worker 4"}
+{"level":"info","time":"2026-01-02T21:19:50+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:19:59+05:00","message":"Added Task ID: 381421, Name: Long task"}
+{"level":"info","time":"2026-01-02T21:20:12+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:22:34+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:24:52+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T21:24:52+05:00","message":"Starting Worker 0"}
+{"level":"info","time":"2026-01-02T21:24:52+05:00","message":"Starting Worker 1"}
+{"level":"info","time":"2026-01-02T21:24:52+05:00","message":"Starting Worker 2"}
+{"level":"info","time":"2026-01-02T21:24:52+05:00","message":"Starting Worker 3"}
+{"level":"info","time":"2026-01-02T21:24:52+05:00","message":"Starting Worker 4"}
+{"level":"info","time":"2026-01-02T21:25:14+05:00","message":"Added Task ID: 773057, Name: Long task"}
+{"level":"info","time":"2026-01-02T21:25:14+05:00","message":"Processing Task ID: 773057, Name: Long task"}
+{"level":"info","time":"2026-01-02T21:25:17+05:00","message":"Task ID: 773057 completed successfully"}
+{"level":"info","time":"2026-01-02T21:25:17+05:00","message":"Result received for Task ID: 773057, Status: Completed"}
+{"level":"info","time":"2026-01-02T21:25:34+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:26:00+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:26:39+05:00","message":"Added Task ID: 77799, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:26:39+05:00","message":"Processing Task ID: 77799, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:26:40+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:26:42+05:00","message":"Task ID: 77799 completed successfully"}
+{"level":"info","time":"2026-01-02T21:26:42+05:00","message":"Result received for Task ID: 77799, Status: Completed"}
+{"level":"info","time":"2026-01-02T21:26:56+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:27:00+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:28:02+05:00","message":"Fetching task with ID: 773057"}
+{"level":"info","time":"2026-01-02T21:28:05+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:28:59+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T21:28:59+05:00","message":"Starting Worker 0"}
+{"level":"info","time":"2026-01-02T21:28:59+05:00","message":"Starting Worker 1"}
+{"level":"info","time":"2026-01-02T21:28:59+05:00","message":"Starting Worker 2"}
+{"level":"info","time":"2026-01-02T21:28:59+05:00","message":"Starting Worker 3"}
+{"level":"info","time":"2026-01-02T21:28:59+05:00","message":"Starting Worker 4"}
+{"level":"info","time":"2026-01-02T21:29:10+05:00","message":"Added Task ID: 181782, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:29:10+05:00","message":"Processing Task ID: 181782, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:29:12+05:00","message":"Fetching all tasks"}
+{"level":"error","time":"2026-01-02T21:29:13+05:00","message":"Task ID: 181782 failed during processing"}
+{"level":"info","time":"2026-01-02T21:29:13+05:00","message":"Result received for Task ID: 181782, Status: Failed"}
+{"level":"info","time":"2026-01-02T21:31:53+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:31:53+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:41:15+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T21:41:15+05:00","message":"Starting Worker 0"}
+{"level":"info","time":"2026-01-02T21:41:15+05:00","message":"Starting Worker 1"}
+{"level":"info","time":"2026-01-02T21:41:15+05:00","message":"Starting Worker 2"}
+{"level":"info","time":"2026-01-02T21:41:15+05:00","message":"Starting Worker 3"}
+{"level":"info","time":"2026-01-02T21:41:15+05:00","message":"Starting Worker 4"}
+{"level":"info","time":"2026-01-02T21:41:18+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:41:23+05:00","message":"Added Task ID: 282454, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:41:23+05:00","message":"Processing Task ID: 282454, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:41:26+05:00","message":"Task ID: 282454 completed successfully"}
+{"level":"info","time":"2026-01-02T21:41:26+05:00","message":"Result received for Task ID: 282454, Status: Completed"}
+{"level":"info","time":"2026-01-02T21:41:27+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:41:39+05:00","message":"Added Task ID: 781541, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:41:39+05:00","message":"Processing Task ID: 781541, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:41:40+05:00","message":"Fetching all tasks"}
+{"level":"error","time":"2026-01-02T21:41:42+05:00","message":"Task ID: 781541 failed during processing"}
+{"level":"info","time":"2026-01-02T21:41:42+05:00","message":"Result received for Task ID: 781541, Status: Failed"}
+{"level":"info","time":"2026-01-02T21:41:43+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:41:45+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:41:55+05:00","message":"Added Task ID: 962365, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:41:55+05:00","message":"Processing Task ID: 962365, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:41:56+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:41:58+05:00","message":"Task ID: 962365 completed successfully"}
+{"level":"info","time":"2026-01-02T21:41:58+05:00","message":"Result received for Task ID: 962365, Status: Completed"}
+{"level":"info","time":"2026-01-02T21:42:12+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:42:15+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:49:18+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:49:19+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:53:04+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T21:53:04+05:00","message":"Starting Worker 0"}
+{"level":"info","time":"2026-01-02T21:53:04+05:00","message":"Starting Worker 1"}
+{"level":"info","time":"2026-01-02T21:53:04+05:00","message":"Starting Worker 2"}
+{"level":"info","time":"2026-01-02T21:53:04+05:00","message":"Starting Worker 3"}
+{"level":"info","time":"2026-01-02T21:53:04+05:00","message":"Starting Worker 4"}
+{"level":"info","time":"2026-01-02T21:53:09+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:53:16+05:00","message":"Added Task ID: 253291, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:53:16+05:00","message":"Processing Task ID: 253291, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:53:18+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:53:19+05:00","message":"Task ID: 253291 completed successfully"}
+{"level":"info","time":"2026-01-02T21:53:19+05:00","message":"Result received for Task ID: 253291, Status: Completed"}
+{"level":"info","time":"2026-01-02T21:53:21+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:53:32+05:00","message":"Added Task ID: 379102, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:53:32+05:00","message":"Processing Task ID: 379102, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:53:33+05:00","message":"Fetching all tasks"}
+{"level":"error","time":"2026-01-02T21:53:35+05:00","message":"Task ID: 379102 failed during processing"}
+{"level":"info","time":"2026-01-02T21:53:35+05:00","message":"Result received for Task ID: 379102, Status: Failed"}
+{"level":"info","time":"2026-01-02T21:53:36+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:53:39+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:53:44+05:00","message":"Added Task ID: 65509, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:53:44+05:00","message":"Processing Task ID: 65509, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:53:46+05:00","message":"Fetching all tasks"}
+{"level":"error","time":"2026-01-02T21:53:47+05:00","message":"Task ID: 65509 failed during processing"}
+{"level":"info","time":"2026-01-02T21:53:47+05:00","message":"Result received for Task ID: 65509, Status: Failed"}
+{"level":"info","time":"2026-01-02T21:53:48+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:53:50+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:53:54+05:00","message":"Added Task ID: 692581, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:53:54+05:00","message":"Processing Task ID: 692581, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T21:53:54+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:53:56+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:53:57+05:00","message":"Task ID: 692581 completed successfully"}
+{"level":"info","time":"2026-01-02T21:53:57+05:00","message":"Result received for Task ID: 692581, Status: Completed"}
+{"level":"info","time":"2026-01-02T21:53:57+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:59:40+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T21:59:40+05:00","message":"Added Task ID: 985597, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T21:59:40+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T21:59:40+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"info","time":"2026-01-02T21:59:43+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T21:59:43+05:00","message":"Processing Task ID: , Name: Test Task with Timeout"}
+{"level":"error","time":"2026-01-02T21:59:43+05:00","message":"Task ID:  cancelled"}
+{"level":"info","time":"2026-01-02T22:00:35+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T22:00:35+05:00","message":"Added Task ID: 922313, Name: Sample Task"}
+{"level":"info","time":"2026-01-02T22:00:35+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:00:35+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"info","time":"2026-01-02T22:00:38+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-02T22:00:38+05:00","message":"Processing Task ID: , Name: Test Task with Timeout"}
+{"level":"error","time":"2026-01-02T22:00:38+05:00","message":"Task ID:  cancelled"}
+{"level":"info","time":"2026-01-02T22:03:24+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T22:03:24+05:00","message":"Starting Worker 0"}
+{"level":"info","time":"2026-01-02T22:03:24+05:00","message":"Starting Worker 1"}
+{"level":"info","time":"2026-01-02T22:03:24+05:00","message":"Starting Worker 2"}
+{"level":"info","time":"2026-01-02T22:03:24+05:00","message":"Starting Worker 3"}
+{"level":"info","time":"2026-01-02T22:03:24+05:00","message":"Starting Worker 4"}
+{"level":"info","time":"2026-01-02T22:03:38+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:03:43+05:00","message":"Added Task ID: 563323, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:03:43+05:00","message":"Processing Task ID: 563323, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:03:43+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:03:46+05:00","message":"Added Task ID: 906897, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:03:46+05:00","message":"Processing Task ID: 906897, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:03:46+05:00","message":"Task ID: 563323 completed successfully"}
+{"level":"info","time":"2026-01-02T22:03:46+05:00","message":"Result received for Task ID: 563323, Status: Completed"}
+{"level":"info","time":"2026-01-02T22:03:47+05:00","message":"Added Task ID: 100179, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:03:47+05:00","message":"Processing Task ID: 100179, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:03:48+05:00","message":"Added Task ID: 516996, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:03:48+05:00","message":"Processing Task ID: 516996, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:03:48+05:00","message":"Added Task ID: 801638, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:03:48+05:00","message":"Processing Task ID: 801638, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:03:49+05:00","message":"Task ID: 906897 completed successfully"}
+{"level":"info","time":"2026-01-02T22:03:49+05:00","message":"Result received for Task ID: 906897, Status: Completed"}
+{"level":"info","time":"2026-01-02T22:03:49+05:00","message":"Fetching all tasks"}
+{"level":"error","time":"2026-01-02T22:03:50+05:00","message":"Task ID: 100179 failed during processing"}
+{"level":"info","time":"2026-01-02T22:03:50+05:00","message":"Result received for Task ID: 100179, Status: Failed"}
+{"level":"error","time":"2026-01-02T22:03:51+05:00","message":"Task ID: 516996 failed during processing"}
+{"level":"info","time":"2026-01-02T22:03:51+05:00","message":"Result received for Task ID: 516996, Status: Failed"}
+{"level":"error","time":"2026-01-02T22:03:51+05:00","message":"Task ID: 801638 failed during processing"}
+{"level":"info","time":"2026-01-02T22:03:51+05:00","message":"Result received for Task ID: 801638, Status: Failed"}
+{"level":"info","time":"2026-01-02T22:03:56+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:04:05+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:04:10+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:04:15+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:05:15+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:05:23+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T22:05:23+05:00","message":"Starting Worker 0"}
+{"level":"info","time":"2026-01-02T22:05:23+05:00","message":"Starting Worker 1"}
+{"level":"info","time":"2026-01-02T22:05:23+05:00","message":"Starting Worker 2"}
+{"level":"info","time":"2026-01-02T22:05:23+05:00","message":"Starting Worker 3"}
+{"level":"info","time":"2026-01-02T22:05:23+05:00","message":"Starting Worker 4"}
+{"level":"info","time":"2026-01-02T22:05:27+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:05:33+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:05:34+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:05:37+05:00","message":"Added Task ID: 529001, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:05:37+05:00","message":"Processing Task ID: 529001, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:05:39+05:00","message":"Added Task ID: 454164, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:05:39+05:00","message":"Processing Task ID: 454164, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:05:40+05:00","message":"Added Task ID: 174107, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:05:40+05:00","message":"Processing Task ID: 174107, Name: Another Long task"}
+{"level":"error","time":"2026-01-02T22:05:40+05:00","message":"Task ID: 529001 failed during processing"}
+{"level":"info","time":"2026-01-02T22:05:40+05:00","message":"Result received for Task ID: 529001, Status: Failed"}
+{"level":"info","time":"2026-01-02T22:05:41+05:00","message":"Added Task ID: 874829, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:05:41+05:00","message":"Processing Task ID: 874829, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:05:42+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:05:42+05:00","message":"Task ID: 454164 completed successfully"}
+{"level":"info","time":"2026-01-02T22:05:42+05:00","message":"Result received for Task ID: 454164, Status: Completed"}
+{"level":"info","time":"2026-01-02T22:05:43+05:00","message":"Task ID: 174107 completed successfully"}
+{"level":"info","time":"2026-01-02T22:05:43+05:00","message":"Result received for Task ID: 174107, Status: Completed"}
+{"level":"error","time":"2026-01-02T22:05:44+05:00","message":"Task ID: 874829 failed during processing"}
+{"level":"info","time":"2026-01-02T22:05:44+05:00","message":"Result received for Task ID: 874829, Status: Failed"}
+{"level":"info","time":"2026-01-02T22:05:47+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:05:52+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:05:57+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:06:00+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:06:03+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:06:23+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:07:09+05:00","message":"Added Task ID: 274521, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:09+05:00","message":"Processing Task ID: 274521, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:10+05:00","message":"Added Task ID: 933485, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:10+05:00","message":"Processing Task ID: 933485, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:11+05:00","message":"Added Task ID: 215022, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:11+05:00","message":"Processing Task ID: 215022, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:12+05:00","message":"Added Task ID: 706904, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:12+05:00","message":"Processing Task ID: 706904, Name: Another Long task"}
+{"level":"error","time":"2026-01-02T22:07:12+05:00","message":"Task ID: 274521 failed during processing"}
+{"level":"info","time":"2026-01-02T22:07:12+05:00","message":"Result received for Task ID: 274521, Status: Failed"}
+{"level":"info","time":"2026-01-02T22:07:12+05:00","message":"Added Task ID: 14032, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:12+05:00","message":"Processing Task ID: 14032, Name: Another Long task"}
+{"level":"error","time":"2026-01-02T22:07:13+05:00","message":"Task ID: 933485 failed during processing"}
+{"level":"info","time":"2026-01-02T22:07:13+05:00","message":"Result received for Task ID: 933485, Status: Failed"}
+{"level":"info","time":"2026-01-02T22:07:13+05:00","message":"Added Task ID: 525952, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:13+05:00","message":"Processing Task ID: 525952, Name: Another Long task"}
+{"level":"error","time":"2026-01-02T22:07:14+05:00","message":"Task ID: 215022 failed during processing"}
+{"level":"info","time":"2026-01-02T22:07:14+05:00","message":"Result received for Task ID: 215022, Status: Failed"}
+{"level":"info","time":"2026-01-02T22:07:14+05:00","message":"Added Task ID: 650270, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:14+05:00","message":"Processing Task ID: 650270, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:15+05:00","message":"Added Task ID: 618562, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:15+05:00","message":"Processing Task ID: 618562, Name: Another Long task"}
+{"level":"error","time":"2026-01-02T22:07:15+05:00","message":"Task ID: 706904 failed during processing"}
+{"level":"info","time":"2026-01-02T22:07:15+05:00","message":"Result received for Task ID: 706904, Status: Failed"}
+{"level":"info","time":"2026-01-02T22:07:15+05:00","message":"Added Task ID: 375201, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:15+05:00","message":"Processing Task ID: 375201, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:15+05:00","message":"Task ID: 14032 completed successfully"}
+{"level":"info","time":"2026-01-02T22:07:15+05:00","message":"Result received for Task ID: 14032, Status: Completed"}
+{"level":"info","time":"2026-01-02T22:07:16+05:00","message":"Added Task ID: 600812, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:16+05:00","message":"Processing Task ID: 600812, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:16+05:00","message":"Task ID: 525952 completed successfully"}
+{"level":"info","time":"2026-01-02T22:07:16+05:00","message":"Result received for Task ID: 525952, Status: Completed"}
+{"level":"info","time":"2026-01-02T22:07:17+05:00","message":"Added Task ID: 855553, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:17+05:00","message":"Processing Task ID: 855553, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:07:17+05:00","message":"Task ID: 650270 completed successfully"}
+{"level":"info","time":"2026-01-02T22:07:17+05:00","message":"Result received for Task ID: 650270, Status: Completed"}
+{"level":"info","time":"2026-01-02T22:07:18+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:07:18+05:00","message":"Task ID: 618562 completed successfully"}
+{"level":"info","time":"2026-01-02T22:07:18+05:00","message":"Result received for Task ID: 618562, Status: Completed"}
+{"level":"error","time":"2026-01-02T22:07:18+05:00","message":"Task ID: 375201 failed during processing"}
+{"level":"info","time":"2026-01-02T22:07:18+05:00","message":"Result received for Task ID: 375201, Status: Failed"}
+{"level":"error","time":"2026-01-02T22:07:19+05:00","message":"Task ID: 600812 failed during processing"}
+{"level":"info","time":"2026-01-02T22:07:19+05:00","message":"Result received for Task ID: 600812, Status: Failed"}
+{"level":"error","time":"2026-01-02T22:07:20+05:00","message":"Task ID: 855553 failed during processing"}
+{"level":"info","time":"2026-01-02T22:07:20+05:00","message":"Result received for Task ID: 855553, Status: Failed"}
+{"level":"info","time":"2026-01-02T22:22:10+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T22:22:10+05:00","message":"Starting Worker 0"}
+{"level":"info","time":"2026-01-02T22:22:10+05:00","message":"Starting Worker 1"}
+{"level":"info","time":"2026-01-02T22:22:10+05:00","message":"Starting Worker 2"}
+{"level":"info","time":"2026-01-02T22:22:10+05:00","message":"Starting Worker 3"}
+{"level":"info","time":"2026-01-02T22:22:10+05:00","message":"Starting Worker 4"}
+{"level":"info","time":"2026-01-02T22:22:21+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:22:27+05:00","message":"Added Task ID: 248595, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:22:27+05:00","message":"Processing Task ID: 248595, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:22:28+05:00","message":"Added Task ID: 72425, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:22:28+05:00","message":"Processing Task ID: 72425, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:22:29+05:00","message":"Added Task ID: 856583, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:22:29+05:00","message":"Processing Task ID: 856583, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:22:29+05:00","message":"Added Task ID: 165852, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:22:29+05:00","message":"Processing Task ID: 165852, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:22:30+05:00","message":"Added Task ID: 467189, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:22:30+05:00","message":"Processing Task ID: 467189, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:22:30+05:00","message":"Task ID: 248595 completed successfully"}
+{"level":"info","time":"2026-01-02T22:22:30+05:00","message":"Result received for Task ID: 248595, Status: Completed"}
+{"level":"info","time":"2026-01-02T22:22:31+05:00","message":"Added Task ID: 898624, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:22:31+05:00","message":"Processing Task ID: 898624, Name: Another Long task"}
+{"level":"error","time":"2026-01-02T22:22:31+05:00","message":"Task ID: 72425 failed during processing"}
+{"level":"info","time":"2026-01-02T22:22:31+05:00","message":"Result received for Task ID: 72425, Status: Failed"}
+{"level":"info","time":"2026-01-02T22:22:31+05:00","message":"Added Task ID: 3014, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:22:31+05:00","message":"Processing Task ID: 3014, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:22:32+05:00","message":"Task ID: 856583 completed successfully"}
+{"level":"info","time":"2026-01-02T22:22:32+05:00","message":"Result received for Task ID: 856583, Status: Completed"}
+{"level":"info","time":"2026-01-02T22:22:32+05:00","message":"Added Task ID: 917012, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:22:32+05:00","message":"Processing Task ID: 917012, Name: Another Long task"}
+{"level":"error","time":"2026-01-02T22:22:32+05:00","message":"Task ID: 165852 failed during processing"}
+{"level":"info","time":"2026-01-02T22:22:32+05:00","message":"Result received for Task ID: 165852, Status: Failed"}
+{"level":"info","time":"2026-01-02T22:22:33+05:00","message":"Fetching all tasks"}
+{"level":"error","time":"2026-01-02T22:22:33+05:00","message":"Task ID: 467189 failed during processing"}
+{"level":"info","time":"2026-01-02T22:22:33+05:00","message":"Result received for Task ID: 467189, Status: Failed"}
+{"level":"error","time":"2026-01-02T22:22:34+05:00","message":"Task ID: 898624 failed during processing"}
+{"level":"info","time":"2026-01-02T22:22:34+05:00","message":"Result received for Task ID: 898624, Status: Failed"}
+{"level":"info","time":"2026-01-02T22:22:34+05:00","message":"Task ID: 3014 completed successfully"}
+{"level":"info","time":"2026-01-02T22:22:34+05:00","message":"Result received for Task ID: 3014, Status: Completed"}
+{"level":"info","time":"2026-01-02T22:22:35+05:00","message":"Task ID: 917012 completed successfully"}
+{"level":"info","time":"2026-01-02T22:22:35+05:00","message":"Result received for Task ID: 917012, Status: Completed"}
+{"level":"info","time":"2026-01-02T22:22:37+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:22:45+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:22:46+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:22:50+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:22:52+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:22:53+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:22:57+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:24:21+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-02T22:24:21+05:00","message":"Starting Worker 0"}
+{"level":"info","time":"2026-01-02T22:24:21+05:00","message":"Starting Worker 1"}
+{"level":"info","time":"2026-01-02T22:24:21+05:00","message":"Starting Worker 2"}
+{"level":"info","time":"2026-01-02T22:24:21+05:00","message":"Starting Worker 3"}
+{"level":"info","time":"2026-01-02T22:24:21+05:00","message":"Starting Worker 4"}
+{"level":"info","time":"2026-01-02T22:24:29+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:24:33+05:00","message":"Added Task ID: 851427, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:33+05:00","message":"Processing Task ID: 851427, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:34+05:00","message":"Added Task ID: 337859, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:34+05:00","message":"Processing Task ID: 337859, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:35+05:00","message":"Added Task ID: 71276, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:35+05:00","message":"Processing Task ID: 71276, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:35+05:00","message":"Added Task ID: 62664, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:35+05:00","message":"Processing Task ID: 62664, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:36+05:00","message":"Task ID: 851427 completed successfully"}
+{"level":"info","time":"2026-01-02T22:24:36+05:00","message":"Result received for Task ID: 851427, Status: Completed"}
+{"level":"info","time":"2026-01-02T22:24:36+05:00","message":"Added Task ID: 539723, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:36+05:00","message":"Processing Task ID: 539723, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:37+05:00","message":"Added Task ID: 415288, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:37+05:00","message":"Processing Task ID: 415288, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:37+05:00","message":"Task ID: 337859 completed successfully"}
+{"level":"info","time":"2026-01-02T22:24:37+05:00","message":"Result received for Task ID: 337859, Status: Completed"}
+{"level":"error","time":"2026-01-02T22:24:38+05:00","message":"Task ID: 71276 failed during processing"}
+{"level":"info","time":"2026-01-02T22:24:38+05:00","message":"Result received for Task ID: 71276, Status: Failed"}
+{"level":"info","time":"2026-01-02T22:24:38+05:00","message":"Task ID: 62664 completed successfully"}
+{"level":"info","time":"2026-01-02T22:24:38+05:00","message":"Result received for Task ID: 62664, Status: Completed"}
+{"level":"error","time":"2026-01-02T22:24:39+05:00","message":"Task ID: 539723 failed during processing"}
+{"level":"info","time":"2026-01-02T22:24:39+05:00","message":"Result received for Task ID: 539723, Status: Failed"}
+{"level":"error","time":"2026-01-02T22:24:40+05:00","message":"Task ID: 415288 failed during processing"}
+{"level":"info","time":"2026-01-02T22:24:40+05:00","message":"Result received for Task ID: 415288, Status: Failed"}
+{"level":"info","time":"2026-01-02T22:24:40+05:00","message":"Added Task ID: 224032, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:40+05:00","message":"Processing Task ID: 224032, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:41+05:00","message":"Added Task ID: 573363, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:41+05:00","message":"Processing Task ID: 573363, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:42+05:00","message":"Added Task ID: 11141, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:42+05:00","message":"Processing Task ID: 11141, Name: Another Long task"}
+{"level":"error","time":"2026-01-02T22:24:43+05:00","message":"Task ID: 224032 failed during processing"}
+{"level":"info","time":"2026-01-02T22:24:43+05:00","message":"Result received for Task ID: 224032, Status: Failed"}
+{"level":"error","time":"2026-01-02T22:24:44+05:00","message":"Task ID: 573363 failed during processing"}
+{"level":"info","time":"2026-01-02T22:24:44+05:00","message":"Result received for Task ID: 573363, Status: Failed"}
+{"level":"error","time":"2026-01-02T22:24:45+05:00","message":"Task ID: 11141 failed during processing"}
+{"level":"info","time":"2026-01-02T22:24:45+05:00","message":"Result received for Task ID: 11141, Status: Failed"}
+{"level":"info","time":"2026-01-02T22:24:45+05:00","message":"Added Task ID: 682348, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:45+05:00","message":"Processing Task ID: 682348, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:46+05:00","message":"Added Task ID: 7988, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:46+05:00","message":"Processing Task ID: 7988, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:46+05:00","message":"Added Task ID: 183229, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:46+05:00","message":"Processing Task ID: 183229, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:47+05:00","message":"Added Task ID: 18089, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:47+05:00","message":"Processing Task ID: 18089, Name: Another Long task"}
+{"level":"info","time":"2026-01-02T22:24:48+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:24:48+05:00","message":"Task ID: 682348 completed successfully"}
+{"level":"info","time":"2026-01-02T22:24:48+05:00","message":"Result received for Task ID: 682348, Status: Completed"}
+{"level":"info","time":"2026-01-02T22:24:49+05:00","message":"Task ID: 7988 completed successfully"}
+{"level":"info","time":"2026-01-02T22:24:49+05:00","message":"Result received for Task ID: 7988, Status: Completed"}
+{"level":"error","time":"2026-01-02T22:24:49+05:00","message":"Task ID: 183229 failed during processing"}
+{"level":"info","time":"2026-01-02T22:24:49+05:00","message":"Result received for Task ID: 183229, Status: Failed"}
+{"level":"error","time":"2026-01-02T22:24:50+05:00","message":"Task ID: 18089 failed during processing"}
+{"level":"info","time":"2026-01-02T22:24:50+05:00","message":"Result received for Task ID: 18089, Status: Failed"}
+{"level":"info","time":"2026-01-02T22:25:14+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-02T22:25:36+05:00","message":"Fetching all tasks"}
