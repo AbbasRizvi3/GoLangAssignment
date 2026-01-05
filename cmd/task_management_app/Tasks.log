@@ -1,0 +1,85 @@
+{"level":"info","time":"2026-01-05T18:08:19+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-05T18:08:19+05:00","message":"Starting Worker 0"}
+{"level":"info","time":"2026-01-05T18:08:19+05:00","message":"Starting Worker 1"}
+{"level":"info","time":"2026-01-05T18:08:19+05:00","message":"Starting Worker 2"}
+{"level":"info","time":"2026-01-05T18:08:19+05:00","message":"Starting Worker 3"}
+{"level":"info","time":"2026-01-05T18:08:19+05:00","message":"Starting Worker 4"}
+{"level":"info","time":"2026-01-05T18:08:52+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-05T18:08:56+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-05T18:09:22+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-05T18:09:35+05:00","message":"Added Task ID: 710121, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:35+05:00","message":"Processing Task ID: 710121, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:38+05:00","message":"Fetching all tasks"}
+{"level":"error","time":"2026-01-05T18:09:38+05:00","message":"Task ID: 710121 failed during processing"}
+{"level":"error","time":"2026-01-05T18:09:38+05:00","message":"Error processing Task ID: 710121, Error: task Another Long task failed during processing"}
+{"level":"info","time":"2026-01-05T18:09:38+05:00","message":"Result received for Task ID: 710121, Status: Failed"}
+{"level":"info","time":"2026-01-05T18:09:41+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-05T18:09:45+05:00","message":"Added Task ID: 748006, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:45+05:00","message":"Processing Task ID: 748006, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:46+05:00","message":"Added Task ID: 51676, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:46+05:00","message":"Processing Task ID: 51676, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:46+05:00","message":"Added Task ID: 902297, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:46+05:00","message":"Processing Task ID: 902297, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:47+05:00","message":"Added Task ID: 336290, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:47+05:00","message":"Processing Task ID: 336290, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:48+05:00","message":"Added Task ID: 87293, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:48+05:00","message":"Processing Task ID: 87293, Name: Another Long task"}
+{"level":"error","time":"2026-01-05T18:09:48+05:00","message":"Task ID: 748006 failed during processing"}
+{"level":"error","time":"2026-01-05T18:09:48+05:00","message":"Error processing Task ID: 748006, Error: task Another Long task failed during processing"}
+{"level":"info","time":"2026-01-05T18:09:48+05:00","message":"Result received for Task ID: 748006, Status: Failed"}
+{"level":"info","time":"2026-01-05T18:09:48+05:00","message":"Added Task ID: 93892, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:48+05:00","message":"Processing Task ID: 93892, Name: Another Long task"}
+{"level":"error","time":"2026-01-05T18:09:49+05:00","message":"Task ID: 51676 failed during processing"}
+{"level":"error","time":"2026-01-05T18:09:49+05:00","message":"Error processing Task ID: 51676, Error: task Another Long task failed during processing"}
+{"level":"info","time":"2026-01-05T18:09:49+05:00","message":"Result received for Task ID: 51676, Status: Failed"}
+{"level":"info","time":"2026-01-05T18:09:49+05:00","message":"Added Task ID: 221471, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:49+05:00","message":"Processing Task ID: 221471, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:49+05:00","message":"Task ID: 902297 completed successfully"}
+{"level":"info","time":"2026-01-05T18:09:49+05:00","message":"Result received for Task ID: 902297, Status: Completed"}
+{"level":"info","time":"2026-01-05T18:09:50+05:00","message":"Added Task ID: 422150, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:50+05:00","message":"Processing Task ID: 422150, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:50+05:00","message":"Task ID: 336290 completed successfully"}
+{"level":"info","time":"2026-01-05T18:09:50+05:00","message":"Result received for Task ID: 336290, Status: Completed"}
+{"level":"error","time":"2026-01-05T18:09:51+05:00","message":"Task ID: 87293 failed during processing"}
+{"level":"error","time":"2026-01-05T18:09:51+05:00","message":"Error processing Task ID: 87293, Error: task Another Long task failed during processing"}
+{"level":"info","time":"2026-01-05T18:09:51+05:00","message":"Result received for Task ID: 87293, Status: Failed"}
+{"level":"info","time":"2026-01-05T18:09:51+05:00","message":"Task ID: 93892 completed successfully"}
+{"level":"info","time":"2026-01-05T18:09:51+05:00","message":"Result received for Task ID: 93892, Status: Completed"}
+{"level":"info","time":"2026-01-05T18:09:52+05:00","message":"Task ID: 221471 completed successfully"}
+{"level":"info","time":"2026-01-05T18:09:52+05:00","message":"Result received for Task ID: 221471, Status: Completed"}
+{"level":"info","time":"2026-01-05T18:09:53+05:00","message":"Task ID: 422150 completed successfully"}
+{"level":"info","time":"2026-01-05T18:09:53+05:00","message":"Result received for Task ID: 422150, Status: Completed"}
+{"level":"info","time":"2026-01-05T18:09:53+05:00","message":"Added Task ID: 727158, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:53+05:00","message":"Processing Task ID: 727158, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:53+05:00","message":"Added Task ID: 81459, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:53+05:00","message":"Processing Task ID: 81459, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:54+05:00","message":"Added Task ID: 893854, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:54+05:00","message":"Processing Task ID: 893854, Name: Another Long task"}
+{"level":"error","time":"2026-01-05T18:09:56+05:00","message":"Task ID: 727158 failed during processing"}
+{"level":"error","time":"2026-01-05T18:09:56+05:00","message":"Error processing Task ID: 727158, Error: task Another Long task failed during processing"}
+{"level":"info","time":"2026-01-05T18:09:56+05:00","message":"Result received for Task ID: 727158, Status: Failed"}
+{"level":"error","time":"2026-01-05T18:09:56+05:00","message":"Task ID: 81459 failed during processing"}
+{"level":"error","time":"2026-01-05T18:09:56+05:00","message":"Error processing Task ID: 81459, Error: task Another Long task failed during processing"}
+{"level":"info","time":"2026-01-05T18:09:56+05:00","message":"Result received for Task ID: 81459, Status: Failed"}
+{"level":"error","time":"2026-01-05T18:09:57+05:00","message":"Task ID: 893854 failed during processing"}
+{"level":"error","time":"2026-01-05T18:09:57+05:00","message":"Error processing Task ID: 893854, Error: task Another Long task failed during processing"}
+{"level":"info","time":"2026-01-05T18:09:57+05:00","message":"Result received for Task ID: 893854, Status: Failed"}
+{"level":"info","time":"2026-01-05T18:09:58+05:00","message":"Added Task ID: 239231, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:58+05:00","message":"Processing Task ID: 239231, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:58+05:00","message":"Added Task ID: 899792, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:58+05:00","message":"Processing Task ID: 899792, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:59+05:00","message":"Added Task ID: 928848, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:09:59+05:00","message":"Processing Task ID: 928848, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:10:00+05:00","message":"Added Task ID: 857790, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:10:00+05:00","message":"Processing Task ID: 857790, Name: Another Long task"}
+{"level":"info","time":"2026-01-05T18:10:01+05:00","message":"Fetching all tasks"}
+{"level":"error","time":"2026-01-05T18:10:01+05:00","message":"Task ID: 239231 failed during processing"}
+{"level":"error","time":"2026-01-05T18:10:01+05:00","message":"Error processing Task ID: 239231, Error: task Another Long task failed during processing"}
+{"level":"info","time":"2026-01-05T18:10:01+05:00","message":"Result received for Task ID: 239231, Status: Failed"}
+{"level":"info","time":"2026-01-05T18:10:01+05:00","message":"Task ID: 899792 completed successfully"}
+{"level":"info","time":"2026-01-05T18:10:01+05:00","message":"Result received for Task ID: 899792, Status: Completed"}
+{"level":"info","time":"2026-01-05T18:10:02+05:00","message":"Task ID: 928848 completed successfully"}
+{"level":"info","time":"2026-01-05T18:10:02+05:00","message":"Result received for Task ID: 928848, Status: Completed"}
+{"level":"info","time":"2026-01-05T18:10:03+05:00","message":"Task ID: 857790 completed successfully"}
+{"level":"info","time":"2026-01-05T18:10:03+05:00","message":"Result received for Task ID: 857790, Status: Completed"}
+{"level":"info","time":"2026-01-05T18:10:09+05:00","message":"Fetching all tasks"}

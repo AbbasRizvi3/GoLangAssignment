@@ -1,13 +1,15 @@
-package main
+package tests
 
 import (
 	"context"
 	"testing"
 	"time"
+
+	"github.com/AbbasRizvi3/GoLangAssignment.git/core/workers"
 )
 
 func TestTaskProcessingWithoutIssues(t *testing.T) {
-	testTask := &Task{
+	testTask := &workers.Task{
 		Name:     "Test Task",
 		Priority: 1,
 		Status:   "Pending",
@@ -23,7 +25,7 @@ func TestTaskProcessingWithoutIssues(t *testing.T) {
 }
 
 func TestTaskProcessingWithTimeout(t *testing.T) {
-	testTask := &Task{
+	testTask := &workers.Task{
 		Name:     "Test Task with Timeout",
 		Priority: 1,
 		Status:   "Pending",
@@ -44,7 +46,7 @@ func TestTaskProcessRandomness(t *testing.T) {
 	completed, failed := 0, 0
 
 	for i := 0; i < 20; i++ {
-		task := &Task{
+		task := &workers.Task{
 			Name:     "Random Task",
 			Priority: 1,
 			Status:   "Pending",

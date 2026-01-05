@@ -1,4 +1,4 @@
-package main
+package tests
 
 import (
 	"bytes"
@@ -7,6 +7,10 @@ import (
 	"net/http"
 	"net/http/httptest"
 	"testing"
+
+	"github.com/AbbasRizvi3/GoLangAssignment.git/core/app"
+	"github.com/AbbasRizvi3/GoLangAssignment.git/core/workers"
+	"github.com/AbbasRizvi3/GoLangAssignment.git/internal/routers"
 )
 
 type TestStruct struct {
@@ -15,7 +19,7 @@ type TestStruct struct {
 }
 
 func TestHandleAddTask(t *testing.T) {
-	SetupRoutes()
+	routers.SetupRoutes()
 	sampleData := TestStruct{
 		Name:     "Sample Task",
 		Priority: 1,
@@ -32,7 +36,7 @@ func TestHandleAddTask(t *testing.T) {
 	req.Header.Set("Content-Type", "application/json")
 	rec := httptest.NewRecorder()
 
-	Router.ServeHTTP(rec, req)
+	app.Router.ServeHTTP(rec, req)
 
 	if status := rec.Code; status != http.StatusOK {
 		t.Errorf("handler returned wrong status code: got %v want %v",
@@ -42,7 +46,7 @@ func TestHandleAddTask(t *testing.T) {
 
 func TestHandleGetAllTasks(t *testing.T) {
 
-	var respondedData []Task
+	var respondedData []workers.Task
 	req, err := http.NewRequest("GET", "/tasks", nil)
 	if err != nil {
 		t.Fatal(err)
@@ -50,7 +54,7 @@ func TestHandleGetAllTasks(t *testing.T) {
 	req.Header.Set("Content-Type", "application/json")
 	rec := httptest.NewRecorder()
 
-	Router.ServeHTTP(rec, req)
+	app.Router.ServeHTTP(rec, req)
 
 	if status := rec.Code; status != http.StatusOK {
 		t.Errorf("handler returned wrong status code: got %v want %v",

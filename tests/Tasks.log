@@ -1,0 +1,47 @@
+{"level":"info","time":"2026-01-05T18:11:15+05:00","message":"Logger Started"}
+{"level":"info","time":"2026-01-05T18:11:15+05:00","message":"Added Task ID: 969412, Name: Sample Task"}
+{"level":"info","time":"2026-01-05T18:11:15+05:00","message":"Fetching all tasks"}
+{"level":"info","time":"2026-01-05T18:11:15+05:00","message":"Processing Task ID: , Name: Test Task"}
+{"level":"info","time":"2026-01-05T18:11:18+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-05T18:11:18+05:00","message":"Processing Task ID: , Name: Test Task with Timeout"}
+{"level":"error","time":"2026-01-05T18:11:18+05:00","message":"Task ID:  cancelled"}
+{"level":"info","time":"2026-01-05T18:11:18+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"info","time":"2026-01-05T18:11:21+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-05T18:11:21+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"info","time":"2026-01-05T18:11:24+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-05T18:11:24+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-05T18:11:27+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-05T18:11:27+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"info","time":"2026-01-05T18:11:30+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-05T18:11:30+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-05T18:11:33+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-05T18:11:33+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-05T18:11:36+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-05T18:11:36+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"info","time":"2026-01-05T18:11:39+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-05T18:11:39+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-05T18:11:42+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-05T18:11:42+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-05T18:11:45+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-05T18:11:45+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"info","time":"2026-01-05T18:11:48+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-05T18:11:48+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"info","time":"2026-01-05T18:11:51+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-05T18:11:51+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"info","time":"2026-01-05T18:11:54+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-05T18:11:54+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-05T18:11:57+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-05T18:11:57+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"info","time":"2026-01-05T18:12:00+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-05T18:12:00+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-05T18:12:03+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-05T18:12:03+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"error","time":"2026-01-05T18:12:06+05:00","message":"Task ID:  failed during processing"}
+{"level":"info","time":"2026-01-05T18:12:06+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"info","time":"2026-01-05T18:12:09+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-05T18:12:09+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"info","time":"2026-01-05T18:12:12+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-05T18:12:12+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"info","time":"2026-01-05T18:12:15+05:00","message":"Task ID:  completed successfully"}
+{"level":"info","time":"2026-01-05T18:12:15+05:00","message":"Processing Task ID: , Name: Random Task"}
+{"level":"info","time":"2026-01-05T18:12:18+05:00","message":"Task ID:  completed successfully"}

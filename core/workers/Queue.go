@@ -1,4 +1,4 @@
-package main
+package workers
 
 import (
 	"sort"
@@ -7,18 +7,18 @@ import (
 
 type TaskQueue struct {
 	Tasks []*Task
-	mutex sync.RWMutex
+	Mutex sync.RWMutex
 }
 
 func (q *TaskQueue) AddTask(task *Task) {
-	q.mutex.Lock()
-	defer q.mutex.Unlock()
+	q.Mutex.Lock()
+	defer q.Mutex.Unlock()
 	q.Tasks = append(q.Tasks, task)
 }
 
 func (q *TaskQueue) GetNextTask() *Task {
-	q.mutex.RLock()
-	defer q.mutex.RUnlock()
+	q.Mutex.RLock()
+	defer q.Mutex.RUnlock()
 	sort.Slice(q.Tasks, func(i, j int) bool {
 		return q.Tasks[i].Priority > q.Tasks[j].Priority
 	})
@@ -32,7 +32,7 @@ func (q *TaskQueue) GetNextTask() *Task {
 }
 
 func (q *TaskQueue) LockTask(task *Task) {
-	q.mutex.Lock()
-	defer q.mutex.Unlock()
+	q.Mutex.Lock()
+	defer q.Mutex.Unlock()
 	task.Status = "In Progress"
 }
