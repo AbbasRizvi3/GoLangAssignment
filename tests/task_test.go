@@ -5,16 +5,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AbbasRizvi3/GoLangAssignment.git/core/workers"
+	"github.com/AbbasRizvi3/GoLangAssignment.git/internal/tasks"
 )
 
 func TestTaskProcessingWithoutIssues(t *testing.T) {
-	testTask := &workers.Task{
+	testTask := &tasks.Task{
 		Name:     "Test Task",
 		Priority: 1,
 		Status:   "Pending",
 	}
-	ctx := context.Background()
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
 	err := testTask.Process(ctx)
 	if err != nil {
 		t.Errorf("Expected no error, got %v", err)
@@ -25,7 +26,7 @@ func TestTaskProcessingWithoutIssues(t *testing.T) {
 }
 
 func TestTaskProcessingWithTimeout(t *testing.T) {
-	testTask := &workers.Task{
+	testTask := &tasks.Task{
 		Name:     "Test Task with Timeout",
 		Priority: 1,
 		Status:   "Pending",
@@ -46,7 +47,7 @@ func TestTaskProcessRandomness(t *testing.T) {
 	completed, failed := 0, 0
 
 	for i := 0; i < 20; i++ {
-		task := &workers.Task{
+		task := &tasks.Task{
 			Name:     "Random Task",
 			Priority: 1,
 			Status:   "Pending",

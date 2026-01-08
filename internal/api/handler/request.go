@@ -1,4 +1,4 @@
-package request
+package handler
 
 type Request struct {
 	ID       string `json:"id"`

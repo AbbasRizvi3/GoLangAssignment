@@ -4,20 +4,20 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/AbbasRizvi3/GoLangAssignment.git/core/app"
-	"github.com/AbbasRizvi3/GoLangAssignment.git/core/workers"
+	"github.com/AbbasRizvi3/GoLangAssignment.git/internal/core/app"
+	"github.com/AbbasRizvi3/GoLangAssignment.git/internal/tasks"
 )
 
 func TestAddTasksToQueue(t *testing.T) {
 
 	app.Tasks.Tasks = nil
 
-	task1 := workers.Task{
+	task1 := tasks.Task{
 		Name:     "Task1",
 		Priority: 1,
 		Status:   "Pending",
 	}
-	task2 := workers.Task{
+	task2 := tasks.Task{
 		Name:     "Task2",
 		Priority: 2,
 		Status:   "Pending",
@@ -32,12 +32,12 @@ func TestAddTasksToQueue(t *testing.T) {
 
 func TestPriorityOrder(t *testing.T) {
 	app.Tasks.Tasks = nil
-	task1 := workers.Task{
+	task1 := tasks.Task{
 		Name:     "LowPriorityTask",
 		Priority: 1,
 		Status:   "Pending",
 	}
-	task2 := workers.Task{
+	task2 := tasks.Task{
 		Name:     "HighPriorityTask",
 		Priority: 5,
 		Status:   "Pending",
