@@ -17,6 +17,7 @@ type Processable interface {
 type Task struct {
 	ID       string
 	Name     string
+	Health   string
 	Priority int
 	Status   string // Pending, InProgress, Completed, Failed
 	Result   string
