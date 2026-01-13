@@ -6,12 +6,11 @@ import (
 )
 
 const (
-	taskChannelBufferSize   = 15
-	resultChannelBufferSize = 100
+	taskChannelBufferSize = 30
 )
 
 var Tasks tasks.TaskQueue
 
 var TaskChannel = make(chan struct{}, taskChannelBufferSize)
-var ResultChannel = make(chan *tasks.Task, resultChannelBufferSize)
+var ResultSlice []tasks.Task
 var Router = gin.Default()

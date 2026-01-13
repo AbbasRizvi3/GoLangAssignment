@@ -18,6 +18,16 @@ func (q *TaskQueue) AddTask(task *Task) {
 	q.Tasks = append(q.Tasks, task)
 }
 
+func fetchTask(t *Task) (*Task, bool) {
+	t.Mutex.Lock()
+	defer t.Mutex.Unlock()
+	if t.Status == "Pending" {
+		t.Status = "InProgress"
+		return t, true
+	}
+	return nil, false
+}
+
 func (q *TaskQueue) GetNextTask() *Task {
 	q.Mutex.Lock()
 	defer q.Mutex.Unlock()
@@ -26,25 +36,12 @@ func (q *TaskQueue) GetNextTask() *Task {
 	})
 
 	for i := 0; i < len(q.Tasks); i++ {
-		t := q.Tasks[i]
-		t.Mutex.Lock()
-		if t.Status == "Pending" {
-			t.Status = "InProgress"
-			t.Mutex.Unlock()
+		if t, ok := fetchTask(q.Tasks[i]); ok {
 			logger.Logger.Info().Msgf("Next Task ID: %s fetched for processing", t.ID)
 			return t
 		}
-		t.Mutex.Unlock()
 	}
 
 	logger.Logger.Info().Msg("No pending tasks available in the queue")
 	return nil
-}
-
-// changed
-func (q *TaskQueue) LockTask(task *Task) {
-	task.Mutex.Lock()
-	defer task.Mutex.Unlock()
-	task.Status = "Task Locked"
-	logger.Logger.Info().Msgf("Task ID: %s locked for processing", task.ID)
 }

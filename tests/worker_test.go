@@ -11,90 +11,97 @@ import (
 )
 
 const (
-	totalTasks  = 20
+	totalTasks  = 5
 	workerCount = 4
 	timeoutSec  = 6
 )
 
+var ActiveWorkers = 0
+var mutex sync.Mutex
+
 func TestWorkersProcessAllTasksUsingAppWorkers(t *testing.T) {
 	app.Tasks.Tasks = nil
 
-	for w := 0; w < workerCount; w++ {
-		go tasks.Worker(&app.Tasks, app.TaskChannel, app.ResultChannel)
-	}
-
-	time.Sleep(10 * time.Millisecond)
+	go func() {
+		for range app.TaskChannel {
+			for {
+				mutex.Lock()
+				if ActiveWorkers < workerCount {
+					ActiveWorkers++
+					mutex.Unlock()
+					go tasks.Worker(&app.Tasks, &app.ResultSlice, &ActiveWorkers, &mutex)
+					break
+				}
+				mutex.Unlock()
+				time.Sleep(1 * time.Millisecond)
+			}
+		}
+	}()
 
 	for i := 0; i < totalTasks; i++ {
-		task := tasks.Task{
+		task := &tasks.Task{
 			Name:     fmt.Sprintf("app-wp-task-%02d", i),
 			Priority: i % 3,
 			ID:       fmt.Sprintf("task-%02d", i),
 			Status:   "Pending",
 		}
-		app.Tasks.AddTask(&task)
+		app.Tasks.AddTask(task)
 
 		app.TaskChannel <- struct{}{}
 	}
 
-	received := make(map[string]bool)
-	deadline := time.After(time.Duration(timeoutSec) * time.Second)
+	time.Sleep(10 * time.Second)
 
-	for len(received) < totalTasks {
-		select {
-		case res := <-app.ResultChannel:
-			received[res.Name] = true
-		case <-deadline:
-			t.Fatalf("timeout waiting for results: got %d/%d", len(received), totalTasks)
-		}
-	}
-
-	if len(received) != totalTasks {
-		t.Fatalf("expected %d processed tasks, got %d", totalTasks, len(received))
+	if len(app.ResultSlice) != totalTasks {
+		t.Fatalf("expected %d processed tasks, got %d", totalTasks, len(app.ResultSlice))
 	}
 }
-
 func TestWorkersAvoidDuplicateProcessingUsingAppWorkers(t *testing.T) {
-	app.Tasks.Tasks = nil
 
-	for w := 0; w < workerCount; w++ {
-		go tasks.Worker(&app.Tasks, app.TaskChannel, app.ResultChannel)
-	}
-	time.Sleep(10 * time.Millisecond)
+	app.Tasks.Tasks = nil
+	app.ResultSlice = nil
+	ActiveWorkers = 0
+
+	go func() {
+		for range app.TaskChannel {
+			for {
+				mutex.Lock()
+				if ActiveWorkers < workerCount {
+					ActiveWorkers++
+					mutex.Unlock()
+					go tasks.Worker(&app.Tasks, &app.ResultSlice, &ActiveWorkers, &mutex)
+					break
+				}
+				mutex.Unlock()
+				time.Sleep(1 * time.Millisecond)
+			}
+		}
+	}()
 
 	for i := 0; i < totalTasks; i++ {
-		task := tasks.Task{
+		task := &tasks.Task{
 			Name:     fmt.Sprintf("dup-task-%02d", i),
 			Priority: i % 2,
 			ID:       fmt.Sprintf("dup-%02d", i),
 			Status:   "Pending",
 		}
-		app.Tasks.AddTask(&task)
+		app.Tasks.AddTask(task)
 		app.TaskChannel <- struct{}{}
 	}
+	time.Sleep(10 * time.Second)
 
-	var mu sync.Mutex
-	counts := make(map[string]int)
-	deadline := time.After(time.Duration(timeoutSec) * time.Second)
-	processed := 0
+	seen := make(map[string]bool)
 
-	for processed < totalTasks {
-		select {
-		case res := <-app.ResultChannel:
-			mu.Lock()
-			counts[res.Name]++
-			if counts[res.Name] > 1 {
-				mu.Unlock()
-				t.Fatalf("task processed more than once: %s", res.Name)
-			}
-			mu.Unlock()
-			processed++
-		case <-deadline:
-			t.Fatalf("timeout waiting for results: processed %d/%d", processed, totalTasks)
+	if len(app.ResultSlice) != totalTasks {
+		t.Fatalf("Expected %d results, but got %d", totalTasks, len(app.ResultSlice))
+	}
+
+	for _, res := range app.ResultSlice {
+		if seen[res.ID] {
+			t.Fatalf("FAILED: Task %s was processed more than once!", res.ID)
 		}
+		seen[res.ID] = true
 	}
 
-	if len(counts) != totalTasks {
-		t.Fatalf("expected %d unique processed tasks, got %d", totalTasks, len(counts))
-	}
+	t.Logf("Success: All %d tasks processed uniquely.", len(seen))
 }

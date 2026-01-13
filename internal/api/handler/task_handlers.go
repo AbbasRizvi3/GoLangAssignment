@@ -26,10 +26,10 @@ func HandleAddTask(ctx *gin.Context) {
 	}
 	app.Tasks.AddTask(temp)
 	temp.Mutex.RLock()
+	defer temp.Mutex.RUnlock()
 	taskCopy := *temp
-	temp.Mutex.RUnlock()
 	if _, err := json.Marshal(gin.H{"message": "Task added successfully", "task": taskCopy}); err != nil {
-		logger.Logger.Error().Msgf("Failed to encode response JSON: %v", err)
+		fmt.Errorf("Failed to encode response JSON: %v", err)
 		return
 	}
 	logger.Logger.Info().Msgf("Added Task ID: %s, Name: %s", temp.ID, temp.Name)
@@ -37,19 +37,29 @@ func HandleAddTask(ctx *gin.Context) {
 	app.TaskChannel <- struct{}{}
 }
 
+func copyTask(t *tasks.Task) tasks.Task {
+	t.Mutex.RLock()
+	defer t.Mutex.RUnlock()
+	return *t
+}
+
 func HandleGetAllTasks(ctx *gin.Context) {
-	logger.Logger.Info().Msg("Fetching all tasks")
+	fmt.Println("Fetching all tasks")
 	app.Tasks.Mutex.RLock()
 	defer app.Tasks.Mutex.RUnlock()
 
-	tasksCopy := make([]tasks.Task, 0, len(app.Tasks.Tasks))
+	tasksCopy := make([]tasks.Task, 0, len(app.Tasks.Tasks)+len(app.ResultSlice))
 	for _, t := range app.Tasks.Tasks {
-		t.Mutex.RLock()
-		taskCopy := *t
-		t.Mutex.RUnlock()
-		tasksCopy = append(tasksCopy, taskCopy)
+		if t != nil {
+			taskCopy := copyTask(t)
+			tasksCopy = append(tasksCopy, taskCopy)
+		}
 	}
 
+	for _, t := range app.ResultSlice {
+		tasksCopy = append(tasksCopy, t)
+	}
+	fmt.Println("Total tasks fetched: %d", len(tasksCopy))
 	if _, err := json.Marshal(tasksCopy); err != nil {
 		logger.Logger.Error().Msgf("Failed to encode tasks: %v", err)
 		return
@@ -62,14 +72,12 @@ func HandleGetSpecificTask(ctx *gin.Context) {
 	app.Tasks.Mutex.RLock()
 	defer app.Tasks.Mutex.RUnlock()
 	id := ctx.Param("id")
-	logger.Logger.Info().Msgf("Fetching task with ID: %s", id)
+	fmt.Printf("Fetching task with ID: %s\n", id)
 	temp := make([]tasks.Task, 0)
 
 	for _, t := range app.Tasks.Tasks {
 		if t.ID == id {
-			t.Mutex.RLock()
-			taskCopy := *t
-			t.Mutex.RUnlock()
+			taskCopy := copyTask(t)
 			temp = append(temp, taskCopy)
 		}
 	}
@@ -83,7 +91,7 @@ func HandleGetSpecificTask(ctx *gin.Context) {
 		ctx.JSON(404, gin.H{"error": "Task not found"})
 		return
 	}
-	logger.Logger.Info().Msgf("Task with ID: %s found", id)
+	fmt.Printf("Task with ID: %s found\n", id)
 	if _, err := json.Marshal(gin.H{"tasks": temp}); err != nil {
 		logger.Logger.Error().Msgf("Failed to encode tasks JSON: %v", err)
 	}

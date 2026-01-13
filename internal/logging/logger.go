@@ -22,5 +22,5 @@ func init() {
 	}
 
 	Logger = zerolog.New(file).With().Timestamp().Logger()
-	Logger.Info().Msg("Logger Started")
+	fmt.Println("Logger Started")
 }
