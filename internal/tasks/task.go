@@ -50,9 +50,9 @@ func caseTaskCompleted(t *Task) {
 
 func caseTaskFailed(t *Task) {
 	t.Mutex.Lock()
+	defer t.Mutex.Unlock()
 	t.Status = "Failed"
 	t.Result = "Task failed during processing"
-	t.Mutex.Unlock()
 }
 
 func (t *Task) Process(ctx context.Context) error {
