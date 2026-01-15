@@ -11,6 +11,10 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+const (
+	randomNumber = 1000000
+)
+
 func HandleAddTask(ctx *gin.Context) {
 
 	var req Request
@@ -19,7 +23,7 @@ func HandleAddTask(ctx *gin.Context) {
 		return
 	}
 	temp := &tasks.Task{
-		ID:       fmt.Sprintf("%d", rand.Intn(1000000)),
+		ID:       fmt.Sprintf("%d", rand.Intn(randomNumber)),
 		Name:     req.Name,
 		Priority: req.Priority,
 		Status:   "Pending",
@@ -27,20 +31,26 @@ func HandleAddTask(ctx *gin.Context) {
 	app.Tasks.AddTask(temp)
 	temp.Mutex.RLock()
 	defer temp.Mutex.RUnlock()
-	taskCopy := *temp
+	taskCopy := copyTask(temp)
 	if _, err := json.Marshal(gin.H{"message": "Task added successfully", "task": taskCopy}); err != nil {
-		fmt.Errorf("Failed to encode response JSON: %v", err)
+		fmt.Printf("Failed to encode response JSON: %v\n", err)
 		return
 	}
-	logger.Logger.Info().Msgf("Added Task ID: %s, Name: %s", temp.ID, temp.Name)
+	fmt.Printf("Added Task ID: %s, Name: %s\n", temp.ID, temp.Name)
 	ctx.JSON(200, gin.H{"message": "Task added successfully", "task": taskCopy})
 	app.TaskChannel <- struct{}{}
 }
 
-func copyTask(t *tasks.Task) tasks.Task {
+func copyTask(t *tasks.Task) tasks.TaskData {
 	t.Mutex.RLock()
 	defer t.Mutex.RUnlock()
-	return *t
+	return tasks.TaskData{
+		ID:       t.ID,
+		Name:     t.Name,
+		Priority: t.Priority,
+		Status:   t.Status,
+		Result:   t.Result,
+	}
 }
 
 func HandleGetAllTasks(ctx *gin.Context) {
@@ -52,14 +62,28 @@ func HandleGetAllTasks(ctx *gin.Context) {
 	for _, t := range app.Tasks.Tasks {
 		if t != nil {
 			taskCopy := copyTask(t)
-			tasksCopy = append(tasksCopy, taskCopy)
+			tasksCopy = append(tasksCopy, tasks.Task{
+				ID:       taskCopy.ID,
+				Name:     taskCopy.Name,
+				Priority: taskCopy.Priority,
+				Status:   taskCopy.Status,
+				Result:   taskCopy.Result,
+			})
 		}
 	}
 
-	for _, t := range app.ResultSlice {
-		tasksCopy = append(tasksCopy, t)
+	for i := range app.ResultSlice {
+		t := &app.ResultSlice[i]
+		tasksCopy = append(tasksCopy, tasks.Task{
+			ID:       t.ID,
+			Name:     t.Name,
+			Priority: t.Priority,
+			Status:   t.Status,
+			Result:   t.Result,
+		})
 	}
-	fmt.Println("Total tasks fetched: %d", len(tasksCopy))
+
+	fmt.Printf("Total tasks fetched: %d\n", len(tasksCopy))
 	if _, err := json.Marshal(tasksCopy); err != nil {
 		logger.Logger.Error().Msgf("Failed to encode tasks: %v", err)
 		return
@@ -78,14 +102,20 @@ func HandleGetSpecificTask(ctx *gin.Context) {
 	for _, t := range app.Tasks.Tasks {
 		if t.ID == id {
 			taskCopy := copyTask(t)
-			temp = append(temp, taskCopy)
+			temp = append(temp, tasks.Task{
+				ID:       taskCopy.ID,
+				Name:     taskCopy.Name,
+				Priority: taskCopy.Priority,
+				Status:   taskCopy.Status,
+				Result:   taskCopy.Result,
+			})
 		}
 	}
 
 	if len(temp) == 0 {
-		logger.Logger.Warn().Msgf("Task with ID: %s not found", id)
+		fmt.Printf("Task with ID: %s not found\n", id)
 		if _, err := json.Marshal(gin.H{"error": "Task not found"}); err != nil {
-			logger.Logger.Error().Msgf("Failed to encode 404 JSON: %v", err)
+			fmt.Printf("Failed to encode 404 JSON: %v\n", err)
 			return
 		}
 		ctx.JSON(404, gin.H{"error": "Task not found"})
@@ -93,7 +123,7 @@ func HandleGetSpecificTask(ctx *gin.Context) {
 	}
 	fmt.Printf("Task with ID: %s found\n", id)
 	if _, err := json.Marshal(gin.H{"tasks": temp}); err != nil {
-		logger.Logger.Error().Msgf("Failed to encode tasks JSON: %v", err)
+		fmt.Printf("Failed to encode tasks JSON: %v\n", err)
 	}
 	ctx.JSON(200, gin.H{"tasks": temp})
 }

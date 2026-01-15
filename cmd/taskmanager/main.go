@@ -5,7 +5,6 @@ import (
 	"sync"
 
 	"github.com/AbbasRizvi3/GoLangAssignment.git/internal/core/app"
-	logger "github.com/AbbasRizvi3/GoLangAssignment.git/internal/logging"
 	routers "github.com/AbbasRizvi3/GoLangAssignment.git/internal/router"
 	"github.com/AbbasRizvi3/GoLangAssignment.git/internal/tasks"
 )
@@ -30,10 +29,10 @@ func main() {
 
 	go func() {
 		for range app.TaskChannel {
-			logger.Logger.Info().Msg("Task received in TaskChannel")
+			fmt.Println("Task received in TaskChannel")
 			if ActiveWorkers < workerCount {
 				incrementActiveWorkers()
-				logger.Logger.Info().Msgf("Active Workers: %d", ActiveWorkers)
+				fmt.Printf("Active Workers: %d\n", ActiveWorkers)
 				go tasks.Worker(&app.Tasks, &app.ResultSlice, &ActiveWorkers, &mutex)
 			}
 		}
@@ -41,7 +40,7 @@ func main() {
 
 	err := app.Router.Run(port)
 	if err != nil {
-		logger.Logger.Error().Err(err).Msg("Failed to start server")
+		fmt.Println("Failed to start server")
 	}
 	fmt.Println("Logger Exiting (Program execution suspended")
 

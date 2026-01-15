@@ -96,7 +96,8 @@ func TestWorkersAvoidDuplicateProcessingUsingAppWorkers(t *testing.T) {
 		t.Fatalf("Expected %d results, but got %d", totalTasks, len(app.ResultSlice))
 	}
 
-	for _, res := range app.ResultSlice {
+	for i := range app.ResultSlice {
+		res := &app.ResultSlice[i]
 		if seen[res.ID] {
 			t.Fatalf("FAILED: Task %s was processed more than once!", res.ID)
 		}

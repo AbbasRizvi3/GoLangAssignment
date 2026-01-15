@@ -2,6 +2,7 @@ package tasks
 
 import (
 	"context"
+	"fmt"
 	"sync"
 	"time"
 
@@ -30,7 +31,13 @@ func addResult(task *Task, tasks *TaskQueue, results *[]Task) {
 	}
 	if index != -1 {
 		tasks.Tasks = append(tasks.Tasks[:index], tasks.Tasks[index+1:]...)
-		*results = append(*results, *task)
+		*results = append(*results, Task{
+			ID:       task.ID,
+			Name:     task.Name,
+			Priority: task.Priority,
+			Status:   task.Status,
+			Result:   task.Result,
+		})
 	}
 
 }
@@ -39,7 +46,7 @@ func Worker(tasks *TaskQueue, results *[]Task, ActiveWorkers *int, mutex *sync.M
 
 	task := tasks.GetNextTask()
 	if task == nil {
-		logger.Logger.Info().Msg("No pending tasks in the queue, worker is idling")
+		fmt.Println("No pending tasks in the queue, worker is idling")
 	}
 
 	ctx, cancel := context.WithTimeout(context.Background(), workerTimeout)
@@ -50,7 +57,7 @@ func Worker(tasks *TaskQueue, results *[]Task, ActiveWorkers *int, mutex *sync.M
 	}
 
 	decrementActiveWorkers(ActiveWorkers, mutex)
-	logger.Logger.Info().Msgf("Worker finished processing Task ID: %s, Active Workers: %d", task.ID, *ActiveWorkers)
+	fmt.Printf("Worker finished processing Task ID: %s, Active Workers: %d\n", task.ID, *ActiveWorkers)
 	defer cancel()
 
 }

@@ -63,7 +63,10 @@ func TestHandleGetAllTasks(t *testing.T) {
 		t.Errorf("handler returned wrong status code: got %v want %v",
 			status, http.StatusOK)
 	}
-	json.Unmarshal(rec.Body.Bytes(), &respondedData)
+	err = json.Unmarshal(rec.Body.Bytes(), &respondedData)
+	if err != nil {
+		t.Fatal(err)
+	}
 	fmt.Print(respondedData)
 }
 
@@ -90,7 +93,10 @@ func TestHandleGetSpecificTask(t *testing.T) {
 		Message string     `json:"message"`
 		Task    tasks.Task `json:"task"`
 	}
-	json.Unmarshal(recAdd.Body.Bytes(), &addedTaskResponse)
+	err = json.Unmarshal(recAdd.Body.Bytes(), &addedTaskResponse)
+	if err != nil {
+		t.Fatal(err)
+	}
 	addedTaskID := addedTaskResponse.Task.ID
 
 	reqGet, err := http.NewRequest("GET", "/task/"+addedTaskID, nil)
@@ -107,7 +113,10 @@ func TestHandleGetSpecificTask(t *testing.T) {
 	}
 	var getTaskResponse GetTaskResponse
 
-	json.Unmarshal(recGet.Body.Bytes(), &getTaskResponse)
+	err = json.Unmarshal(recGet.Body.Bytes(), &getTaskResponse)
+	if err != nil {
+		t.Fatal(err)
+	}
 	if len(getTaskResponse.Tasks) == 0 || getTaskResponse.Tasks[0].ID != addedTaskID {
 		t.Errorf("Expected to retrieve task with ID %s, but got different result", addedTaskID)
 	}

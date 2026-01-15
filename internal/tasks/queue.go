@@ -1,6 +1,7 @@
 package tasks
 
 import (
+	"fmt"
 	"sort"
 	"sync"
 
@@ -22,7 +23,6 @@ func fetchTask(t *Task) (*Task, bool) {
 	t.Mutex.Lock()
 	defer t.Mutex.Unlock()
 	if t.Status == "Pending" {
-		t.Status = "InProgress"
 		return t, true
 	}
 	return nil, false
@@ -42,6 +42,6 @@ func (q *TaskQueue) GetNextTask() *Task {
 		}
 	}
 
-	logger.Logger.Info().Msg("No pending tasks available in the queue")
+	fmt.Println("No pending tasks available in the queue")
 	return nil
 }

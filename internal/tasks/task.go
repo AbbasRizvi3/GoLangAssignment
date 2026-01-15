@@ -12,7 +12,6 @@ import (
 
 const (
 	randLimit = 10
-	sleepTime = 3 * time.Second
 )
 
 type Processable interface {
@@ -55,7 +54,20 @@ func caseTaskFailed(t *Task) {
 	t.Result = "Task failed during processing"
 }
 
+func checkTaskValidity(t *Task) error {
+	t.Mutex.Lock()
+	defer t.Mutex.Unlock()
+	if t.Status == "Failed" || t.Status == "Completed" {
+		return fmt.Errorf("Task %s has already been executed", t.ID)
+	}
+	return nil
+}
 func (t *Task) Process(ctx context.Context) error {
+	err := checkTaskValidity(t)
+	if err != nil {
+		return err
+	}
+
 	changeStatusToInProgress(t)
 
 	rand := rand.Intn(randLimit)

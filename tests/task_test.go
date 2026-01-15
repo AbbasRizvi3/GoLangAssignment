@@ -55,11 +55,12 @@ func TestTaskProcessRandomness(t *testing.T) {
 
 		err := task.Process(context.Background())
 
-		if task.Status == "Completed" {
+		switch task.Status {
+		case "Completed":
 			completed++
-		} else if task.Status == "Failed" {
+		case "Failed":
 			failed++
-		} else {
+		default:
 			t.Errorf("Unexpected status: %s", task.Status)
 		}
 
