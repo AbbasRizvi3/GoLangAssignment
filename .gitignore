@@ -1,0 +1,9 @@
+# Binaries
+*.bin
+
+# Logs
+*.log
+
+#bin
+BIN
+
