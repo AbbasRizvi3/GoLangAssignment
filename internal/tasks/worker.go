@@ -19,7 +19,7 @@ func decrementActiveWorkers(ActiveWorkers *int, mutex *sync.Mutex) {
 	*ActiveWorkers--
 }
 
-func addResult(task *Task, tasks *TaskQueue, results *[]Task) {
+func addResult(task *Task, tasks *TaskQueue, results *[]*Task) {
 	task.Mutex.Lock()
 	defer task.Mutex.Unlock()
 	index := -1
@@ -31,7 +31,7 @@ func addResult(task *Task, tasks *TaskQueue, results *[]Task) {
 	}
 	if index != -1 {
 		tasks.Tasks = append(tasks.Tasks[:index], tasks.Tasks[index+1:]...)
-		*results = append(*results, Task{
+		*results = append(*results, &Task{
 			ID:       task.ID,
 			Name:     task.Name,
 			Priority: task.Priority,
@@ -42,7 +42,7 @@ func addResult(task *Task, tasks *TaskQueue, results *[]Task) {
 
 }
 
-func Worker(tasks *TaskQueue, results *[]Task, ActiveWorkers *int, mutex *sync.Mutex) {
+func Worker(tasks *TaskQueue, results *[]*Task, ActiveWorkers *int, mutex *sync.Mutex) {
 
 	task := tasks.GetNextTask()
 	if task == nil {

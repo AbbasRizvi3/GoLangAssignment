@@ -3,16 +3,12 @@ package handler
 import (
 	"encoding/json"
 	"fmt"
-	"math/rand"
 
 	"github.com/AbbasRizvi3/GoLangAssignment.git/internal/core/app"
 	logger "github.com/AbbasRizvi3/GoLangAssignment.git/internal/logging"
 	"github.com/AbbasRizvi3/GoLangAssignment.git/internal/tasks"
 	"github.com/gin-gonic/gin"
-)
-
-const (
-	randomNumber = 1000000
+	"github.com/google/uuid"
 )
 
 func HandleAddTask(ctx *gin.Context) {
@@ -23,7 +19,7 @@ func HandleAddTask(ctx *gin.Context) {
 		return
 	}
 	temp := &tasks.Task{
-		ID:       fmt.Sprintf("%d", rand.Intn(randomNumber)),
+		ID:       fmt.Sprintf("%v", uuid.New().String()),
 		Name:     req.Name,
 		Priority: req.Priority,
 		Status:   "Pending",
@@ -73,7 +69,7 @@ func HandleGetAllTasks(ctx *gin.Context) {
 	}
 
 	for i := range app.ResultSlice {
-		t := &app.ResultSlice[i]
+		t := app.ResultSlice[i]
 		tasksCopy = append(tasksCopy, tasks.Task{
 			ID:       t.ID,
 			Name:     t.Name,

@@ -12,5 +12,5 @@ const (
 var Tasks tasks.TaskQueue
 
 var TaskChannel = make(chan struct{}, taskChannelBufferSize)
-var ResultSlice []tasks.Task
+var ResultSlice []*tasks.Task
 var Router = gin.Default()
